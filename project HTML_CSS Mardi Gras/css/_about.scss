@@ -1,0 +1,53 @@
+.about__main {
+    width: 90%;
+    margin: 120px auto 20px;
+
+    h1 {
+        text-align: center;
+    }
+    p {
+        margin: 12px 0 27px 0;
+            text-align: justify;
+    }
+    span {
+        font-weight: bold;
+        color:$baseColYellow;
+    }
+}
+
+
+
+
+
+
+
+
+
+.about__mayor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about__mayor p {
+    margin: 12px 0 27px 0;
+    text-align: justify;
+
+}
+
+.about__mayor img {
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 210px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 16px 16px 20px -13px rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .about__mayor img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+}

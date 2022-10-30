@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mardi Gras New Orleans</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="head">
+            <nav class="header__navbar">
+                <ul class="nav__links">
+                    <input type="checkbox" id="checkbox_toogle" />
+                    <label for="checkbox_toogle" class="hamburger"><span class="hamburger-line"></span></label>
+                    <div class="header__menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </ul>
+                <div class="logo">
+                    <img src="media/logoMardiGras.jpg" alt="Mardi Gras New Orleans Logo">
+                </div>
+            </nav>
+        </header>
+        <div class="contact__title">
+            <h1>Have Mardi Gras Questions?</h1>
+            <h2>Give Us A Shout!</h2>
+            <p>For press inquiries, please contact <a id="press_email"
+                    href="mailto:press@mardigrasneworleans.com">press@mardigrasneworleans.com</a>. For all other
+                questions, please use the form below.</p>
+        </div>
+        <form method="get">
+            <div class="form-field">
+                <div class="form-item first-name">
+                    <p>First Name</p>
+                    <input placeholder="First Name*" type="text" name="firstname" id="fname" onkeyup="validateName()">
+                    <span id="fname-error"></span>
+                </div>
+                <div class="form-item last-name">
+                    <p>Last Name</p>
+                    <input placeholder="Last Name*" type="text" name="lastname" id="lname" onkeyup="validateLastName()">
+                    <span id="lname-error"></span>
+                </div>
+                <div class="form-item email">
+                    <p>Email</p>
+                    <input placeholder="Email*" type="email" name="email" id="email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+                <div class="form-item comment">
+                    <p>Your Message</p>
+                    <textarea placeholder="Write Your Message Here*" name="coments" rows="5" id="msg" onkeyup="validateMessage()"></textarea>
+                    <span id="msg-error"></span>
+                </div>
+                
+                <div class="form-item submit">
+                <span id="submit-error"></span>
+                <button class=submit_btn type="submit" onclick="return validateForm()">SEND MESSAGE</button>
+                
+                <button class=reset_btn type="reset">CLEAR FORM</button>
+                </div>
+
+            </div>
+        </form>
+
+        <footer>
+            <div class="footer__nav">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank">
+                            <img src="./images/facebook.png" alt="Facebook Logo">
+                        </a></li>
+                    <li><a href="https://twitter.com/MardiGrasNOLA" target="_blank">
+                            <img src="./images/twitter.png" alt="Twitter Logo">
+                        </a></li>
+                    <li><a href="https://www.instagram.com/mardigrasneworleans/" target="_blank">
+                            <img src="./images/instagram.png" alt="Instagram Logo">
+                        </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank">
+                            <img src="./images/youtube.png" alt="Youtube Logo">
+                        </a></li>
+                    <li><a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank">
+                            <img src="./images/tripadvisor.png" alt="Tripadvisor Logo">
+                        </a></li>
+                </ul>
+                <ul class="menu-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>©2022 Gennady Pelekhov | All Rights Reserved</p>
+            </div>
+            <div class="footer_logo"><img src="./media/logo.png" alt=""></div>
+            <div id="up__arrow"><a href="#"><img src="./images/up-arrow.png" alt=""></a></div>
+        </footer>
+    </div>
+
+
+<script src="./js/formvalidation.js"></script>
+    <script src="./js/scrollToTop.js"></script>
+</body>
+
+</html>
